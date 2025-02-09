@@ -7,7 +7,7 @@ jobs:
   build:
     name: Start Building...
     runs-on: windows-latest
-    timeout-minutes: 9999
+    timeout-minutes: 800
 
     steps:
       - name: Checkout repository
@@ -22,6 +22,7 @@ jobs:
         run: cmd /c show.bat
 
       - name: Time Counter
+        shell: cmd
         run: |
           if exist loop.bat (
             cmd /c loop.bat
