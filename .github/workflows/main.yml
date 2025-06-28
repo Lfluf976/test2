@@ -1,4 +1,4 @@
-name: Lite mangaer
+name: function
 
 on:
   workflow_dispatch:
